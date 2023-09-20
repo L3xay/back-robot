@@ -18,11 +18,27 @@ $ npx sequelize-cli init
 ```bash
 $ npm start
 ```
-4. Run the migration
+4. install mysql
+```bash
+$ brew install mysql
+ ```
+5. Start mysql
+```bash
+$ brew services start mysql
+```
+6. Connect into mysql
+```bash
+$ mysql -u root -p
+```
+7. Create mysql DB
+```bash
+$ CREATE DATABASE robo_db;
+```
+8. Run the migration
 ```bash
 $ npx sequelize-cli db:migrate
 ```
-5. Run the seeder
+9. Run the seeder
 ```bash
 $ npx sequelize-cli db:seed:all
 ```
